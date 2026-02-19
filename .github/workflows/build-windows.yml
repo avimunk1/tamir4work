@@ -1,0 +1,28 @@
+name: Build Windows Exe
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v4
+
+      - name: Install dependencies
+        run: uv sync
+
+      - name: Add PyInstaller
+        run: uv add pyinstaller
+
+      - name: Build exe
+        run: uv run pyinstaller --onefile -n ExcelExtractor -p src -m excel_extractor.main
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ExcelExtractor-windows
+          path: dist/ExcelExtractor.exe

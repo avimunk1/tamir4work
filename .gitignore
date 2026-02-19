@@ -1,0 +1,18 @@
+# macOS
+.DS_Store
+
+# Dependencies
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# Input/output - keep folders via .gitkeep, ignore contents
+input/*
+!input/.gitkeep
+output/*
+!output/.gitkeep
+example/*
+!example/.gitkeep
