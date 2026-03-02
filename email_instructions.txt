@@ -1,0 +1,46 @@
+Subject: Excel Data Extractor - Instructions
+
+---
+
+BEFORE YOU SEND (prepare the attachment):
+1. Download ExcelExtractor-windows.zip from GitHub Actions → Artifacts
+2. Unzip it to get ExcelExtractor.exe
+3. Create a folder named "ExcelExtractor", put the exe inside
+4. Create two empty folders inside: "input" and "output"
+5. Zip the "ExcelExtractor" folder and attach to your email
+
+---
+
+EMAIL BODY (copy below):
+
+Hi,
+
+I'm sending you the Excel Data Extractor tool. Please follow these steps:
+
+1. DOWNLOAD
+   - Save the attached zip file to your computer
+   - Unzip it to a folder (e.g. Desktop or Documents)
+
+2. PREPARE YOUR FILES
+   - Open the unzipped folder
+   - You will see: ExcelExtractor.exe, plus "input" and "output" folders
+   - Put all your Excel files (.xlsx) into the "input" folder
+
+3. RUN THE TOOL
+   - Double-click ExcelExtractor.exe
+   - A black window may appear briefly – that's normal
+   - Wait until it closes (usually a few seconds)
+
+4. GET YOUR RESULT
+   - Open the "output" folder
+   - Your result file will be there: extracted_data_YYYYMMDD_HHMMSS.xlsx
+   - Open it in Excel – it contains 3 columns: source file name, smel-mosad, total hours
+
+IMPORTANT:
+- If Windows shows a security warning when you run the exe, click "More info" and then "Run anyway"
+- Keep the input and output folders in the same place as the exe – don't move them
+- Each time you run it, a new output file is created (with a new timestamp)
+
+If you have any issues, let me know.
+
+Best regards
